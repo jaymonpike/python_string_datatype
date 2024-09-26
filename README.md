@@ -1,15 +1,18 @@
- # Advanced Strings
- ## Strings -- List of Characters
+# Advanced Strings
 
->Characters can be: 
->  - Letters  ` [A-Za-z] `
->  - Numbers  ` [0-9] ` 
->  - Symbols  ` [@ $ # ~ ]`
->  - [Unicode Characters Site](https://pythonforundergradengineers.com/unicode-characters-in-python.html)
->  - Spaces   `[' ']`
->  - Escape Character `[\n \r \t \' \\ \b \f \ooo \xhh]`
+## Strings -- List of Characters
 
- ## String Indexing
+>Characters can be:
+>
+> - Letters  ` [A-Za-z] `
+> - Numbers  ` [0-9] `
+> - Symbols  `[@ $ # ~ ]`
+> - [Unicode Characters Site](https://pythonforundergradengineers.com/unicode-characters-in-python.html)
+> - Spaces   `[' ']`
+> - Escape Character `[\n \r \t \' \\ \b \f \ooo \xhh]`
+
+## String Indexing
+>
 >- Each character has an index
 >
 >|Char#  |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11|
@@ -29,23 +32,27 @@
 ## Slicing Strings
 
 >- ### SYNTAX -- string [`start` : `end`]
->	- begin at `start` and extending up to but not including `end`
->	- school[0:3] --> `WEB`	
->	- `start` blank
->		- start at index 0
->		- **school[:3] r--> `WEB`**
->	- `end` blank
->		- go until the end of the string
->		- school[8:] --> `ATE` 
+>
+>   - begin at `start` and extending up to but not including `end`
+>   - school[0:3] --> `WEB`
+>   - `start` blank
+>     - start at index 0
+>     - **school[:3] r--> `WEB`**
+>   - `end` blank
+>     - go until the end of the string
+>     - school[8:] --> `ATE`
+>
 >```python
 ># Select a substring
 >print ('start = 0 end = 4: ' + school[0:4])    --> 
 >print ('start = 0 end = 5: ' + school[0:5])    -->
 >```
+>
 >```python
 >print ('start = 2 end = 5: ' + school[2:5])    -->
 >print ('start = -5 end = : ' + school[-5:-1])  -->
 >```
+>
 >```python
 >print ('start = -5 end = : ' + school[-5:])    -->
 >print ('start =  end = : ' + school[:])        -->
@@ -56,8 +63,10 @@
 ## Combining Strings
 
 >- ### String Operators
->  - \+  `concatenate (combine strings)` 
->  - \*  `create multiple copies of the string`
+>
+> - \+  `concatenate (combine strings)`
+> - \*  `create multiple copies of the string`
+>
 >```python
 ># combine string
 > a = 'apple'
@@ -72,9 +81,10 @@
 >
 >
 
-
 ## Formating Strings
->  - `Can't combine strings and numbers unless you use format`
+>
+> - `Can't combine strings and numbers unless you use format`
+>
 >```python
 ># This will produce a TypeError
 > age = 75
@@ -100,9 +110,11 @@
 > print (person.format(age, hours, dogs))
 
 ## Escape characters and strings
->  - `illegal characters in a string require an escape character`
->  - `Use ` \ ` followed by the character `
->  - Escape Character `[\n \r \t \' \\ \b \f \ooo \xhh]`
+>
+> - `illegal characters in a string require an escape character`
+> - `Use` \ ` followed by the character `
+> - Escape Character `[\n \r \t \' \\ \b \f \ooo \xhh]`
+>
 >```python
 ># use of single quote in string
 > txt = "Scott's Dog"
@@ -128,12 +140,13 @@
 > print (person.format(age, hours, dogs))
 
 ## Common string methods
->  - `capitalize()` first character to uppercase
->  - `title()` first character of each word to uppercase
->  - `casefold()` lowercase
->  - `len()` return the length of the string
->  - `count()` number of times a value occurs in a string
->  - [additional string methods](https://realpython.com/python-strings/#built-in-string-methods)
+>
+> - `capitalize()` first character to uppercase
+> - `title()` first character of each word to uppercase
+> - `casefold()` lowercase
+> - `len()` return the length of the string
+> - `count()` number of times a value occurs in a string
+> - [additional string methods](https://realpython.com/python-strings/#built-in-string-methods)
 
 >```python
 ># capitilize the first letter
@@ -143,10 +156,8 @@
 > name = 'sCoTt'
 > print (name.capitalize())
 
-
-
-
 ## More info on Strings
+
 - [realpython.org -> Strings](https://realpython.com/python-strings/)
 - [w3schools.org -> Strings](https://www.w3schools.com/python/python_strings.asp)
 - [python.org  -> Strings](https://docs.python.org/3/tutorial/introduction.html#strings)
